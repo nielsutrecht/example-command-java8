@@ -34,7 +34,8 @@ public class CommandTest {
 
         assertThat(model.get(), equalTo(20));
 
-        //Commands can also be used in a more fluent manner when reusability is not a concern.
+        //Commands can also be used in a more fluent manner when reusability
+        //is not a concern.
         Command.parse("set 1234").apply(model);
         assertThat(model.get(), equalTo(1234));
 
